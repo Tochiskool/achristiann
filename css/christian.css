@@ -1,0 +1,93 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 150%;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header section */
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: green;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Main section */
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards{
+    flex: 1 0 250px;
+    border: 0.2rem solid black;
+    margin:.3rem;
+    padding: .5rem;
+}
+
+.cards header h1{
+    color: #fff;
+    text-align: center;
+    background-color: green;
+    padding: .5rem;
+}
+.cards p{
+    text-align: center;
+    color: #fff;
+    background-color: green;
+    padding: 0 .5rem;
+}
+.cards img{
+    width: 100%;
+}
+/* Article */
+article h1{
+    margin-left: 1rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+article p {
+    padding: .5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+/* Footer */
+footer {
+    background-color: green;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .cards{
+        width:25%;
+    }
+    .main-header{
+        color: blue;
+    }
+}
+@media screen and (max-width: 768px){
+    .cards{
+        min-width:50%;
+    }
+    .main-header{
+        color: yellow;
+    }
+}
+@media screen and (max-width: 576px){
+    .cards{
+        min-width:50%;
+    }
+    .main-header{
+        color: brown;
+    }
+}
