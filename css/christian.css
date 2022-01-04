@@ -92,8 +92,11 @@ footer {
     }
 }
 @media screen and (max-width: 768px){
-    .cards, nav{
+    .cards{
         width:50%;
+    }
+    .cards img{
+        width:100%;
     }
     .main-header{
         color: yellow;
@@ -105,8 +108,8 @@ footer {
     }
 }
 @media screen and (max-width: 576px){
-    .cards{
-        width:50%;
+    .cards img{
+        width:100%;
     }
     .main-header{
         color: brown;
