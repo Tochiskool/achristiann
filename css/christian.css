@@ -5,10 +5,14 @@
 body{
     font-size: 150%;
     line-height: 1.5;
-    margin: 0;
-    padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:#13293d;
+    background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 29%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.29, #FFFFFF));
+    background-color: #DDDDDD;
+    padding: 0.625rem;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #888888;
+    text-align: center;
 }
 
 /* Header section */
@@ -16,7 +20,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #e3e4e2;
+    color: #FFFFFF;
     padding: 1rem;
     width: 100%;
 }
@@ -26,14 +30,14 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #e3e4e2;
+    /* background-color: #e3e4e2; */
   }
   
   nav a {
     width: 10%;
     margin: 1% 5%;
     color: #13293d;
-    background-color: #e3e4e2;
+    /* background-color: #e3e4e2; */
     /* border: 3px solid #13293d; */
     border-radius: 2rem;
     text-align: center;
@@ -68,11 +72,12 @@ main{
 
 .cards{
     flex: 1 0 25rem;
-    border: 0.2rem solid #13293d;
+    /* border: 0.3rem solid ; */
     margin:.3rem;
     padding: .5rem;
     border-radius: 0.5rem;
     position: relative;
+    box-shadow: 0 0 10px #d5d8db inset;
 }
 
 .cards:hover {
@@ -97,14 +102,20 @@ main{
 .cards header h1{
     color: #13293d;
     text-align: center;
-    background-color: #e3e4e2;
+    /* background-color: #e3e4e2; */
     padding: .5rem;
-    z-index: 1;
+    background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 29%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.29, #FFFFFF));
+    background-color: #DDDDDD;
+    padding: 0.625rem;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #888888;
+    text-align: center;
 }
 .cards p{
     text-align: center;
-    color: #13293d;
-    background-color: #e3e4e2;
+    color: #888888;
+    /* background-color: #e3e4e2; */
     padding: 0 .5rem;
     z-index: 2;
 }
@@ -125,13 +136,24 @@ main{
     background-color: transparent;
     border-radius: .5rem;
     z-index: 5;
+    display: none;
 }
 
+.cards:hover .doMagic{
+    display: block;
+}
 /* Article */
 article h1{
     margin-left: 1rem;
     font-style: italic;
     text-decoration: underline;
+    background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 29%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.29, #FFFFFF));
+    background-color: #DDDDDD;
+    padding: 0.625rem;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #888888;
+    text-align: center;
 }
 article p {
     padding: .5rem;
@@ -142,6 +164,13 @@ article p {
 footer {
     background-color: #e3e4e2;
     padding: 1rem;
+    background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 40%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.4, #FFFFFF));
+    background-color: #DDDDDD;
+    padding: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12pt;
+    color: #888888;
     text-align: center;
 }
 
