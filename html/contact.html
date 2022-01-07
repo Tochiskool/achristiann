@@ -12,46 +12,44 @@
 
 <body>
     <a href="christian.html">Home</a>
-    <header>
-        <h1>Welcome to my contact Page</h1>
-        <p>Once you fill the form I will get to you</p>
-    </header>
+
     <main>
         <section>
-            <form>
-                <h3>Add a Comment:</h3>
-                <p>
-                    <label for="username">Name:</label>
-                    <input class="text-input" id="username" type="text" placeholder="First Last" />
-                </p>
-                <p>
-                    <label for="email">E-mail:</label>
-                    <input class="text-input" id="email" type="text" placeholder="me@example.com" />
-                </p>
-                <p class="flex-row">
-                    <label for="expertise">CSS level of expertise:</label>
-                    <select id="expertise">
-                        <option>Beginner</option>
-                        <option selected>Intermediate</option>
-                        <option>Advanced</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="comment">Comment:</label>
-                    <textarea class="text-input" id="comment" placeholder="Great article!"></textarea>
-                </p>
-                <p class="flex-row">
-                    <input class="checkbox" id="agreement" type="checkbox" />
-                    <label for="agreement">I agree to share my e-mail address with The CSS Blog</label>
-                </p>
-                <p>
+            <div id="center">
+                <form>
+                    <h3>Send a message</h3>
+                    <p>
+                        <label for="username">Name:</label>
+                        <input class="text-input" id="username" type="text" placeholder="First Last" />
+                    </p>
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input class="text-input" id="email" type="text" placeholder="me@example.com" />
+                    </p>
+                    <p class="flex-row">
+                        <label for="expertise">Expertise:</label>
+                        <select id="expertise">
+                            <option>Work Agency</option>
+                            <option selected>HResource</option>
+                            <option>CEO</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="comment">Message:</label>
+                        <textarea class="text-input" id="comment" cols="16" rows="8"
+                            placeholder="Send message here!"></textarea>
+                    </p>
+                    <p class="flex-row">
+                        <input class="checkbox" id="agreement" type="checkbox" />
+                        <label for="agreement">I agree to share my e-mail address with Christian </label>
+                    </p>
                     <button>Submit</button>
-                </p>
-            </form>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-
+        <p>&copy copyrights by Tochiskool</p>
     </footer>
 </body>
 
