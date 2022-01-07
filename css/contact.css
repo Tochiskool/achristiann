@@ -1,0 +1,72 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 150%;
+    line-height: 1.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 29%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.29, #FFFFFF));
+    background-color: #DDDDDD;
+    padding: 0.625rem;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #888888;
+}
+
+
+/* Footer */
+footer {
+    background-color: #e3e4e2;
+    padding: 1rem;
+    background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 40%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.4, #FFFFFF));
+    background-color: #DDDDDD;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #888888;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    
+}
+@media screen and (max-width: 992px) {
+    .cards{
+        width:50%;
+    }
+    .main-header{
+        color: blue;
+    }
+}
+@media screen and (max-width: 768px){
+    .cards{
+        width:50%;
+    }
+    .cards img{
+        width:100%;
+    }
+    .main-header{
+        color: yellow;
+    }
+    nav{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+    nav a{
+        margin: 0 auto;
+        border-bottom: 0;
+    }
+}
+@media screen and (max-width: 576px){
+    .cards img{
+        width:100%;
+    }
+    .main-header{
+        color: brown;
+    }
+    nav{
+        display: none;
+    }
+}
