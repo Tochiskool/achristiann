@@ -4,7 +4,7 @@
     [Github pages](https://tochiskool.github.io/achristiann/)
     [View commits](https://github.com/Tochiskool/achristiann)
 ## Project structure
-    Project is intended to be a MERN stack project that displays my work as a Full-stack dev. It is practically my official portfolio.
+**Project is intended to be a MERN stack project that displays my work as a Full-stack dev. It is practically my official portfolio.**
 - Starting a basic structure with a fluid-like modular and scalable frontend end using html and css with the intensions of turning it to a react/react-router front end to create a beautiful UI that will be accessible and user friendly.
 * So far I have used several basic and advance techniques to achieve the UI and am hoping to add more friendly features. 
 ### INTERESTING TOPICS SO FAR
