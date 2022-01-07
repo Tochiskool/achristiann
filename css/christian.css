@@ -21,10 +21,21 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     color: #FFFFFF;
-    padding: 1rem;
+    padding: .5rem;
     width: 100%;
+} 
+.main-header h1::first-letter{
+    color:#ff0000;
+    font-size: xx-large;
 }
- 
+.main-header h3::first-letter{
+    color:#ff0000;
+    font-size: xx-large;
+}
+.main-header h3::after{
+    color: #25c025;
+    content: "Christian Ndifor";
+}
 /* Nav bar */
 nav {
     display: flex;
@@ -112,12 +123,19 @@ main{
     color: #888888;
     text-align: center;
 }
+
 .cards p{
     text-align: center;
     color: #888888;
     /* background-color: #e3e4e2; */
     padding: 0 .5rem;
     z-index: 2;
+}
+.cards p::before{
+        font-family: Impact;
+        content: '\2606';
+        color: #D4AF37;
+        margin-right: 5px;
 }
 .cards img{
     width: 100%;
@@ -160,6 +178,38 @@ article p {
     margin-left: 3rem;
     margin-right: 3rem;
 }
+
+/* Tooltip */
+span[data-descr]{
+    position:relative;
+    padding: 1% 0;
+    text-decoration: underline;
+    color:#000;
+    cursor:grab;
+  }
+  
+  /* TODO: Position tooltip above the keyword, same color as header and nav links, no border-radius, smaller font size */
+  span[data-descr]:hover::after,
+  span[data-descr]:focus::after{
+    content:attr(data-descr);
+    position:absolute;
+    left:0px;
+    bottom:1.75rem;
+    min-width: 1.4rem;
+    border:1px #aaaaaa ridge;
+    background-color: #772014;
+    padding: .75rem;
+    border-radius: .5rem;
+    z-index: 1;
+    font-size: 75%;
+    background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 29%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.29, #FFFFFF));
+    background-color: #DDDDDD;
+    padding: 0.625rem;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #888888;
+    text-align: center;
+  }
 /* Footer */
 footer {
     background-color: #e3e4e2;
