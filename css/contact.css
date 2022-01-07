@@ -16,7 +16,6 @@ body{
 main{
     display: flex;
     flex:1 1 0;
-    max-width: 75rem;
     margin: 2% 0;
 }
 section{
@@ -122,41 +121,19 @@ header{
     
 }
 @media screen and (max-width: 992px) {
-    .cards{
-        width:50%;
-    }
-    .main-header{
-        color: blue;
+    select{
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 768px){
-    .cards{
-        width:50%;
-    }
-    .cards img{
-        width:100%;
-    }
-    .main-header{
-        color: yellow;
-    }
-    nav{
-        flex-direction: column;
-        margin: 0 auto;
-        width: 100%;
-    }
-    nav a{
-        margin: 0 auto;
-        border-bottom: 0;
-    }
+ select{
+     width: 50%;
+     margin: 0 auto;
+ }
 }
 @media screen and (max-width: 576px){
-    .cards img{
-        width:100%;
-    }
-    .main-header{
-        color: brown;
-    }
-    nav{
-        display: none;
+    select{
+        width: 100%;
+        margin: 0 auto;
     }
 }
