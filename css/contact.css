@@ -13,10 +13,100 @@ body{
     font-family: Verdana, Geneva, sans-serif;
     color: #888888;
 }
+main{
+    display: flex;
+    flex:1 1 0;
+    max-width: 75rem;
+    margin: 2% 0;
+}
+section{
+    margin:0 auto;
+}
+form{
+    max-width: 150%;
+}
+form h3{
+    font-size: 150%;
+    text-align: center;
+    text-decoration: underline;
+}
+form p{
+    margin: 3% 0;
+}
+label{
+    display: block;
+}
 
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 1% 2%;
+    color: #fff;
+    background-color: #13293d;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
 
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+
+  .text-input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .text-input, select {
+    padding: 1%;
+    outline: none;
+    border: 0.2rem solid #b9C6ae;
+  }
+  .text-input:hover, .checkbox:hover, 
+  select:hover, button:hover {
+    box-shadow: 0 0 5px #999;
+  }
+
+  .text-input:focus {
+    border-right-width: 5px;
+  }
+
+  .text-input:placeholder-shown {
+    border-style: dashed;
+  }
+
+  .flex-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-row select {
+    flex: 1 0 0;
+    margin-left: 2%;
+  }
+
+  .flex-row input {
+    margin-right: 2%;
+  }
+  
+  .checkbox:checked + label::after {
+    margin-left: 10px;
+    font-size: 90%;
+    content: "(thanks!)";
+    color:green;
+    font-size: 150%;
+  }
+  
 /* Footer */
 footer {
+    display: flex;
+    justify-content: center;
     background-color: #e3e4e2;
     padding: 1rem;
     background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 40%);
