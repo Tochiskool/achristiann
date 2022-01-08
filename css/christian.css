@@ -1,3 +1,14 @@
+:root{
+    --skyBlue:#8ac4ff;
+    --blueSo:#13293d;;
+    --blueSmall:#355e85;
+    --bloodRed:#ff0000;
+    --greyBoy:#888888;
+    --greyLight:#DDDDDD;
+    --greenMan:#25c025;
+    --goldFinger:#D4AF37;
+}
+
 *,*::after,*::before{
     box-sizing: border-box;
 }
@@ -8,10 +19,10 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 29%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.29, #FFFFFF));
-    background-color: #DDDDDD;
+    background-color: var(--greyLight);
     padding: 0.625rem;
     font-family: Verdana, Geneva, sans-serif;
-    color: #888888;
+    color: var(--greyBoy);
     text-align: center;
 }
 
@@ -25,15 +36,15 @@ body{
     width: 100%;
 } 
 .main-header h1::first-letter{
-    color:#ff0000;
+    color:var(--bloodRed);
     font-size: xx-large;
 }
 .main-header h3::first-letter{
-    color:#ff0000;
+    color:var(--bloodRed);
     font-size: xx-large;
 }
 .main-header h3::after{
-    color: #25c025;
+    color: var(--greenMan);
     content: "Christian Ndifor";
 }
 /* Nav bar */
@@ -47,31 +58,31 @@ nav {
   nav a {
     width: 10%;
     margin: 1% 5%;
-    color: #13293d;
+    color: var(--blueSo);
     /* background-color: #e3e4e2; */
-    /* border: 3px solid #13293d; */
+    /* border: 3px solid var(--blueSo); */
     border-radius: 2rem;
     text-align: center;
     text-decoration: none;
     font-size: 130%;
-    border-bottom: 2rem solid #13293d;
+    border-bottom: 2rem solid var(--blueSo);
   }
   
   nav a:hover {
-    text-decoration: underline #8ac4ff;
+    text-decoration: underline var(--skyBlue);
     color: #355e85;
     border-bottom:2 rem solid #355e85;
   }
 
   nav a:active {
     font-size: 110%;
-    box-shadow: 0 0 10px #8ac4ff inset;
+    box-shadow: 0 0 10px var(--skyBlue); inset;
   }
   nav a:focus {
     outline: none;
     color: #fff;
     background-color: none;
-    border-color: #8ac4ff;
+    border-color: var(--skyBlue);;
   }
   
 
@@ -95,14 +106,14 @@ main{
     /* filter: blur(5px);
     -webkit-filter: blur(5px); */
     flex: 1 0 27rem;
-    border: 0.2rem solid #8ac4ff;
-    box-shadow: 0 0 10px #8ac4ff outset;
+    border: 0.2rem solid var(--skyBlue);;
+    box-shadow: 0 0 10px var(--skyBlue); outset;
     cursor: pointer;
   }
 
   .cards:active {
     font-size: 110%;
-    box-shadow: 0 0 10px #8ac4ff inset;
+    box-shadow: 0 0 10px var(--skyBlue); inset;
   }
   .cards:focus {
     outline: none;
@@ -111,22 +122,22 @@ main{
   }
 
 .cards header h1{
-    color: #13293d;
+    color: var(--blueSo);
     text-align: center;
     /* background-color: #e3e4e2; */
     padding: .5rem;
     background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 29%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.29, #FFFFFF));
-    background-color: #DDDDDD;
+    background-color: var(--greyLight);
     padding: 0.625rem;
     font-family: Verdana, Geneva, sans-serif;
-    color: #888888;
+    color: var(--greyBoy);
     text-align: center;
 }
 
 .cards p{
     text-align: center;
-    color: #888888;
+    color: var(--greyBoy);
     /* background-color: #e3e4e2; */
     padding: 0 .5rem;
     z-index: 2;
@@ -134,7 +145,7 @@ main{
 .cards p::before{
         font-family: Impact;
         content: '\2606';
-        color: #D4AF37;
+        color: var(--goldFinger);
         margin-right: 5px;
 }
 .cards img{
@@ -161,17 +172,19 @@ main{
     display: block;
 }
 /* Article */
+
 article h1{
     margin-left: 1rem;
     font-style: italic;
     text-decoration: underline;
     background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 29%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.29, #FFFFFF));
-    background-color: #DDDDDD;
+    background-color: var(--greyLight);
     padding: 0.625rem;
     font-family: Verdana, Geneva, sans-serif;
-    color: #888888;
+    color: var(--greyBoy);
     text-align: center;
+    border-radius: .5rem;
 }
 article p {
     padding: .5rem;
@@ -204,10 +217,10 @@ span[data-descr]{
     font-size: 75%;
     background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 29%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.29, #FFFFFF));
-    background-color: #DDDDDD;
+    background-color: var(--greyLight);
     padding: 0.625rem;
     font-family: Verdana, Geneva, sans-serif;
-    color: #888888;
+    color: var(--greyBoy);
     text-align: center;
   }
 /* Footer */
@@ -216,11 +229,11 @@ footer {
     padding: 1rem;
     background-image: -moz-linear-gradient(top, #20B2AA, #FFFFFF 40%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #20B2AA), color-stop(0.4, #FFFFFF));
-    background-color: #DDDDDD;
+    background-color: var(--greyLight);
     padding: 10px;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 12pt;
-    color: #888888;
+    color: var(--greyBoy);
     text-align: center;
 }
 
