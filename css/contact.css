@@ -69,11 +69,11 @@ button {
   }
   .text-input:hover, .checkbox:hover, 
   select:hover, button:hover {
-    box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 0.313rem #999;
   }
 
   .text-input:focus {
-    border-right-width: 5px;
+    border-right-width: 0.5rem;
   }
 
   .text-input:placeholder-shown {
@@ -96,10 +96,9 @@ button {
   
   .checkbox:checked + label::after {
     margin-left: 10px;
-    font-size: 90%;
+    font-size: 80%;
     content: "(thanks!)";
     color:green;
-    font-size: 150%;
   }
   
 /* Footer */
