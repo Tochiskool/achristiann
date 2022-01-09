@@ -338,5 +338,7 @@ footer {
         justify-content: center;
         width: 100%;
     }
-   
+    article p {
+        padding: .1rem;
+    }    
 }
