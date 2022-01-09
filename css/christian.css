@@ -37,7 +37,17 @@ body{
     height: auto;
     border-radius: 50%;
 }
-/* Header section */
+#pic #subHead{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    justify-content: center;
+}
+#pic #subHead p{
+    font-style: italic;
+    font-size: 80%;
+}
+/* Header sectionco */
 .main-header{
     display: flex;
     justify-content: space-between;
@@ -257,6 +267,15 @@ footer {
     .main-header{
         color: blue;
     }
+    #pic{
+        width: 50%;
+    }
+    #pic img{
+        max-width: 100%;
+        height: 70%;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 768px){
     .cards{
@@ -276,6 +295,15 @@ footer {
     nav a{
         margin: 0 auto;
         border-bottom: 0;
+    }
+    #pic{
+        width: 70%;
+    }
+    #pic img{
+        max-width: 100%;
+        height: 70%;
+        border-radius: 50%;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 576px){
@@ -307,8 +335,5 @@ footer {
         justify-content: center;
         width: 100%;
     }
-    .main-header h3::first-letter{
-        color:var(--bloodRed);
-        font-size: xx-large;
-    }
+   
 }
