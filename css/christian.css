@@ -26,6 +26,17 @@ body{
     text-align: center;
 }
 
+/* Picture welcome HEADER*/
+#pic{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+#pic img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
 /* Header section */
 .main-header{
     display: flex;
@@ -35,13 +46,14 @@ body{
     padding: .5rem;
     width: 100%;
 } 
-.main-header h1::first-letter{
+/* .main-header h1::first-letter{
     color:var(--bloodRed);
     font-size: xx-large;
-}
+} */
 .main-header h3::first-letter{
     color:var(--bloodRed);
     font-size: xx-large;
+    width: 65%;
 }
 .main-header h3::after{
     color: var(--greenMan);
@@ -64,8 +76,8 @@ nav {
     border-radius: 2rem;
     text-align: center;
     text-decoration: none;
-    font-size: 130%;
-    border-bottom: 2rem solid var(--blueSo);
+    font-size: 100%;
+    border-bottom: .3rem solid var(--blueSo);
   }
   
   nav a:hover {
@@ -149,7 +161,8 @@ main{
         margin-right: 5px;
 }
 .cards img{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     /* min-width: 400px; */
     z-index: 3;
 }
@@ -266,6 +279,9 @@ footer {
     }
 }
 @media screen and (max-width: 576px){
+    body{
+       overflow-x: hidden;
+    }
     .cards img{
         width:100%;
     }
@@ -274,5 +290,25 @@ footer {
     }
     nav{
         display: none;
+    }
+    #pic{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #pic img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .main-header h3{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .main-header h3::first-letter{
+        color:var(--bloodRed);
+        font-size: xx-large;
     }
 }
